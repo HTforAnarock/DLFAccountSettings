@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Account Settings View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="AccountSettingsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="AccountSettingsViewController" customModule="AccountSettings" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qug-D7-TRv">
+                                <rect key="frame" x="132.66666666666666" y="107" width="127.99999999999997" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="tdq-W0-zBB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LL1-n6-WlH">
+                                <rect key="frame" x="24" y="141" width="345" height="1"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="qNA-Lk-0CK"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eon-08-h4w">
+                                <rect key="frame" x="0.0" y="156" width="393" height="176"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YQH-TE-S6k">
+                                        <rect key="frame" x="24" y="16" width="345" height="64"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KeC-wL-hio">
+                                                <rect key="frame" x="0.0" y="0.0" width="345" height="64"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="lock" catalog="system" imagePlacement="leading" title=" Change Password">
+                                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="changePasswordButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XDM-FN-t66"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="KeC-wL-hio" firstAttribute="top" secondItem="YQH-TE-S6k" secondAttribute="top" id="4Oh-CF-ogT"/>
+                                            <constraint firstAttribute="height" constant="64" id="5pA-Ko-QcD"/>
+                                            <constraint firstAttribute="bottom" secondItem="KeC-wL-hio" secondAttribute="bottom" id="HCK-6Z-wXw"/>
+                                            <constraint firstAttribute="trailing" secondItem="KeC-wL-hio" secondAttribute="trailing" id="iVU-Dd-a7h"/>
+                                            <constraint firstItem="KeC-wL-hio" firstAttribute="leading" secondItem="YQH-TE-S6k" secondAttribute="leading" id="z1G-GR-2s1"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QaF-WO-qdA">
+                                        <rect key="frame" x="24" y="88" width="345" height="64"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rt2-CM-I7b">
+                                                <rect key="frame" x="0.0" y="0.0" width="345" height="64"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="trash" catalog="system" title=" Delete Account">
+                                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="deleteAccountButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oTp-y9-nfU"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="rt2-CM-I7b" secondAttribute="bottom" id="1wz-ag-MND"/>
+                                            <constraint firstItem="rt2-CM-I7b" firstAttribute="leading" secondItem="QaF-WO-qdA" secondAttribute="leading" id="7Ok-DE-6Wr"/>
+                                            <constraint firstAttribute="trailing" secondItem="rt2-CM-I7b" secondAttribute="trailing" id="OBV-Bh-vTa"/>
+                                            <constraint firstItem="rt2-CM-I7b" firstAttribute="top" secondItem="QaF-WO-qdA" secondAttribute="top" id="fO8-iU-UpN"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="QaF-WO-qdA" secondAttribute="bottom" constant="24" id="2h1-TL-zFB"/>
+                                    <constraint firstItem="YQH-TE-S6k" firstAttribute="leading" secondItem="eon-08-h4w" secondAttribute="leading" constant="24" id="F0D-mx-ht8"/>
+                                    <constraint firstAttribute="trailing" secondItem="QaF-WO-qdA" secondAttribute="trailing" constant="24" id="JIm-Be-ZFQ"/>
+                                    <constraint firstItem="YQH-TE-S6k" firstAttribute="top" secondItem="eon-08-h4w" secondAttribute="top" constant="16" id="NOu-qL-86t"/>
+                                    <constraint firstItem="QaF-WO-qdA" firstAttribute="top" secondItem="YQH-TE-S6k" secondAttribute="bottom" constant="8" id="Nk0-sy-SOu"/>
+                                    <constraint firstAttribute="height" constant="176" id="Usq-Ga-RAl"/>
+                                    <constraint firstAttribute="trailing" secondItem="YQH-TE-S6k" secondAttribute="trailing" constant="24" id="avN-eP-r8X"/>
+                                    <constraint firstItem="QaF-WO-qdA" firstAttribute="leading" secondItem="eon-08-h4w" secondAttribute="leading" constant="24" id="r4u-JZ-4pu"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eon-08-h4w" firstAttribute="top" secondItem="LL1-n6-WlH" secondAttribute="bottom" constant="14" id="NO2-YV-BKw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eon-08-h4w" secondAttribute="trailing" id="P7C-L8-b7g"/>
+                            <constraint firstItem="LL1-n6-WlH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="SP3-t6-g6X"/>
+                            <constraint firstItem="qug-D7-TRv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VjZ-e9-SRf"/>
+                            <constraint firstItem="eon-08-h4w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iVa-WE-t4k"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LL1-n6-WlH" secondAttribute="trailing" constant="24" id="jlw-DE-nn9"/>
+                            <constraint firstItem="qug-D7-TRv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="ksv-ti-Hzz"/>
+                            <constraint firstItem="LL1-n6-WlH" firstAttribute="top" secondItem="qug-D7-TRv" secondAttribute="bottom" constant="14" id="tDD-95-39T"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="changePasswordButton" destination="KeC-wL-hio" id="cSE-4s-KOT"/>
+                        <outlet property="changePasswordView" destination="YQH-TE-S6k" id="MYg-q9-Jss"/>
+                        <outlet property="deleteAccountView" destination="QaF-WO-qdA" id="8eg-mD-J8L"/>
+                        <outlet property="seperatorView" destination="LL1-n6-WlH" id="M65-Wi-wYc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="lock" catalog="system" width="125" height="128"/>
+        <image name="trash" catalog="system" width="117" height="128"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

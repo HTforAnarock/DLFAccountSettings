@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Delete Account View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="DeleteAccountViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="DeleteAccountViewController" customModule="AccountSettings" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delete Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCe-6B-aLB">
+                                <rect key="frame" x="139.66666666666666" y="107" width="114" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="blR-OC-9XR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rB0-C7-191">
+                                <rect key="frame" x="24" y="141" width="345" height="1"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="q1u-rv-bM1"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="noA-PB-ANl">
+                                <rect key="frame" x="0.0" y="156" width="393" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure you want to delete your account? You will loose all your data." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qeu-rK-NWb">
+                                        <rect key="frame" x="24" y="15.999999999999996" width="345" height="40.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="4sz-6v-GGK"/>
+                                    <constraint firstAttribute="trailing" secondItem="Qeu-rK-NWb" secondAttribute="trailing" constant="24" id="WG8-AC-yG8"/>
+                                    <constraint firstItem="Qeu-rK-NWb" firstAttribute="top" secondItem="noA-PB-ANl" secondAttribute="top" constant="16" id="dox-uU-Y8I"/>
+                                    <constraint firstItem="Qeu-rK-NWb" firstAttribute="leading" secondItem="noA-PB-ANl" secondAttribute="leading" constant="24" id="i3S-Vq-GS3"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hkf-G8-2Iv">
+                                <rect key="frame" x="0.0" y="236" width="393" height="60"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Btp-ZG-6wv">
+                                        <rect key="frame" x="24" y="10" width="345" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TvV-20-8Yt">
+                                                <rect key="frame" x="0.0" y="0.0" width="160.66666666666666" height="40"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Cancel">
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="strokeColor" red="0.40000000000000002" green="0.21960784310000001" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </backgroundConfiguration>
+                                                    <color key="baseForegroundColor" red="0.40000000000000002" green="0.21960784310000001" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsX-eo-gAj">
+                                                <rect key="frame" x="184.66666666666663" y="0.0" width="160.33333333333337" height="40"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Confirm">
+                                                    <color key="baseBackgroundColor" red="0.40000000000000002" green="0.21960784310000001" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="confirmButtonAction:" destination="Wmk-Cf-DZO" eventType="touchUpInside" id="zDc-Hp-FKa"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="qbd-0N-mky"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Btp-ZG-6wv" firstAttribute="centerY" secondItem="hkf-G8-2Iv" secondAttribute="centerY" id="9Pr-qg-8yr"/>
+                                    <constraint firstAttribute="trailing" secondItem="Btp-ZG-6wv" secondAttribute="trailing" constant="24" id="LBg-I6-CTi"/>
+                                    <constraint firstItem="Btp-ZG-6wv" firstAttribute="leading" secondItem="hkf-G8-2Iv" secondAttribute="leading" constant="24" id="k8k-G8-Lk1"/>
+                                    <constraint firstAttribute="height" constant="60" id="zeT-hQ-9nr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="rB0-C7-191" secondAttribute="trailing" constant="24" id="6Ka-fa-DSy"/>
+                            <constraint firstItem="rB0-C7-191" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="8Jd-CN-XLm"/>
+                            <constraint firstItem="noA-PB-ANl" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Aok-qv-kUe"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="noA-PB-ANl" secondAttribute="trailing" id="FsI-vf-jwr"/>
+                            <constraint firstItem="JCe-6B-aLB" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="NGa-uD-M13"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="hkf-G8-2Iv" secondAttribute="trailing" id="Nyz-R9-kds"/>
+                            <constraint firstItem="rB0-C7-191" firstAttribute="top" secondItem="JCe-6B-aLB" secondAttribute="bottom" constant="14" id="aDL-Xc-uSe"/>
+                            <constraint firstItem="JCe-6B-aLB" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="48" id="aVi-mb-i5V"/>
+                            <constraint firstItem="noA-PB-ANl" firstAttribute="top" secondItem="rB0-C7-191" secondAttribute="bottom" constant="14" id="axz-GV-IR4"/>
+                            <constraint firstItem="hkf-G8-2Iv" firstAttribute="top" secondItem="noA-PB-ANl" secondAttribute="bottom" id="eLo-a4-hBL"/>
+                            <constraint firstItem="hkf-G8-2Iv" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="t4X-O2-wtS"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Wmk-Cf-DZO" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="14" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
