@@ -10,6 +10,7 @@ import UIKit
 class DeleteAccountViewController: UIViewController {
 
     @IBOutlet weak var confirmButton: UIButton!
+    @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var bottomButtonsView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +29,14 @@ class DeleteAccountViewController: UIViewController {
         let vc = storyBoard.instantiateViewController(withIdentifier: "ConfirmTickMarkViewController") as! ConfirmTickMarkViewController
 
         self.present(vc, animated: true, completion: nil)
+    }
+    
+    @IBAction func cancelButtonAction(_ sender: Any) {
+        let story = UIStoryboard(name: "Main", bundle: nil)
+        let controller = story.instantiateViewController(identifier: "AccountSettingsViewController") as! AccountSettingsViewController
+        //self.present(controller, animated: true, completion: nil)
+        UIApplication.shared.windows.first?.rootViewController = controller
+        UIApplication.shared.windows.first?.makeKeyAndVisible()
     }
     
 

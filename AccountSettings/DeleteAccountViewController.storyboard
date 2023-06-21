@@ -65,6 +65,9 @@
                                                     </backgroundConfiguration>
                                                     <color key="baseForegroundColor" red="0.40000000000000002" green="0.21960784310000001" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="cancelButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Ota-zH-q0g"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsX-eo-gAj">
                                                 <rect key="frame" x="184.66666666666663" y="0.0" width="160.33333333333337" height="40"/>
@@ -110,6 +113,7 @@
                     </view>
                     <connections>
                         <outlet property="bottomButtonsView" destination="hkf-G8-2Iv" id="Hrz-cx-SsZ"/>
+                        <outlet property="cancelButton" destination="TvV-20-8Yt" id="Er0-yM-2We"/>
                         <outlet property="confirmButton" destination="dsX-eo-gAj" id="DF1-M3-8y4"/>
                     </connections>
                 </viewController>

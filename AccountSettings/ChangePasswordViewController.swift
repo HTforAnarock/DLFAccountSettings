@@ -8,7 +8,7 @@
 import UIKit
 
 class ChangePasswordViewController: UIViewController {
-
+    
     @IBOutlet weak var seperatorView: UIView!
     @IBOutlet weak var bottomButtonsView: UIView!
     
@@ -22,7 +22,7 @@ class ChangePasswordViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.commonSettings()
-
+        
         // Do any additional setup after loading the view.
     }
     private func commonSettings() {
@@ -35,6 +35,14 @@ class ChangePasswordViewController: UIViewController {
         print(currentPasswordTextfield.text ?? "empty")
         print(newPasswordTextfield.text ?? "empty")
         print(confirmPasswordTextfield.text ?? "empty")
+    }
+    
+    @IBAction func cancelButtonAction(_ sender: Any) {
+        let story = UIStoryboard(name: "Main", bundle: nil)
+        let controller = story.instantiateViewController(identifier: "AccountSettingsViewController") as! AccountSettingsViewController
+        //self.present(controller, animated: true, completion: nil)
+        UIApplication.shared.windows.first?.rootViewController = controller
+        UIApplication.shared.windows.first?.makeKeyAndVisible()
     }
     
 }
