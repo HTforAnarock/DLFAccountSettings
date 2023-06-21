@@ -11,6 +11,8 @@
 		4F2EB4E22A41874D006EA412 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2EB4E02A41874D006EA412 /* ChangePasswordViewController.swift */; };
 		4F87A8BD2A41D72400EF056E /* DeleteAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F87A8BC2A41D72400EF056E /* DeleteAccountViewController.swift */; };
 		4F87A8BF2A41D73C00EF056E /* DeleteAccountViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F87A8BE2A41D73C00EF056E /* DeleteAccountViewController.storyboard */; };
+		4F87A8C32A42C0CB00EF056E /* ConfirmTickMarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F87A8C22A42C0CB00EF056E /* ConfirmTickMarkViewController.swift */; };
+		4F87A8C52A42C15E00EF056E /* ConfirmTickMarkViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F87A8C42A42C15E00EF056E /* ConfirmTickMarkViewController.storyboard */; };
 		4FB004E02A417C99003088D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB004DF2A417C99003088D3 /* AppDelegate.swift */; };
 		4FB004E22A417C99003088D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB004E12A417C99003088D3 /* SceneDelegate.swift */; };
 		4FB004E42A417C99003088D3 /* AccountSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB004E32A417C99003088D3 /* AccountSettingsViewController.swift */; };
@@ -24,6 +26,8 @@
 		4F2EB4E02A41874D006EA412 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		4F87A8BC2A41D72400EF056E /* DeleteAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAccountViewController.swift; sourceTree = "<group>"; };
 		4F87A8BE2A41D73C00EF056E /* DeleteAccountViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DeleteAccountViewController.storyboard; sourceTree = "<group>"; };
+		4F87A8C22A42C0CB00EF056E /* ConfirmTickMarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmTickMarkViewController.swift; sourceTree = "<group>"; };
+		4F87A8C42A42C15E00EF056E /* ConfirmTickMarkViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConfirmTickMarkViewController.storyboard; sourceTree = "<group>"; };
 		4FB004DC2A417C99003088D3 /* AccountSettings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccountSettings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FB004DF2A417C99003088D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FB004E12A417C99003088D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 				4F205CCC2A41CB1300B53CC1 /* ChangePasswordViewController.storyboard */,
 				4F87A8BC2A41D72400EF056E /* DeleteAccountViewController.swift */,
 				4F87A8BE2A41D73C00EF056E /* DeleteAccountViewController.storyboard */,
+				4F87A8C22A42C0CB00EF056E /* ConfirmTickMarkViewController.swift */,
+				4F87A8C42A42C15E00EF056E /* ConfirmTickMarkViewController.storyboard */,
 			);
 			path = AccountSettings;
 			sourceTree = "<group>";
@@ -141,6 +147,7 @@
 				4FB004EC2A417C9A003088D3 /* LaunchScreen.storyboard in Resources */,
 				4FB004E92A417C9A003088D3 /* Assets.xcassets in Resources */,
 				4FB004E72A417C99003088D3 /* Main.storyboard in Resources */,
+				4F87A8C52A42C15E00EF056E /* ConfirmTickMarkViewController.storyboard in Resources */,
 				4F205CCD2A41CB1300B53CC1 /* ChangePasswordViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,6 +164,7 @@
 				4F2EB4E22A41874D006EA412 /* ChangePasswordViewController.swift in Sources */,
 				4FB004E02A417C99003088D3 /* AppDelegate.swift in Sources */,
 				4FB004E22A417C99003088D3 /* SceneDelegate.swift in Sources */,
+				4F87A8C32A42C0CB00EF056E /* ConfirmTickMarkViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
