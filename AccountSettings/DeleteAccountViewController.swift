@@ -25,16 +25,15 @@ class DeleteAccountViewController: UIViewController {
     }
     
     @IBAction func confirmButtonAction(_ sender: Any) {
-        let storyBoard = UIStoryboard(name: "ConfirmTickMarkViewController", bundle: nil)
-        let vc = storyBoard.instantiateViewController(withIdentifier: "ConfirmTickMarkViewController") as! ConfirmTickMarkViewController
-
-        self.present(vc, animated: true, completion: nil)
+        let story = UIStoryboard(name: "ConfirmTickMarkViewController", bundle: nil)
+        let controller = story.instantiateViewController(identifier: "ConfirmTickMarkViewController") as! ConfirmTickMarkViewController
+        UIApplication.shared.windows.first?.rootViewController = controller
+        UIApplication.shared.windows.first?.makeKeyAndVisible()
     }
     
     @IBAction func cancelButtonAction(_ sender: Any) {
         let story = UIStoryboard(name: "Main", bundle: nil)
         let controller = story.instantiateViewController(identifier: "AccountSettingsViewController") as! AccountSettingsViewController
-        //self.present(controller, animated: true, completion: nil)
         UIApplication.shared.windows.first?.rootViewController = controller
         UIApplication.shared.windows.first?.makeKeyAndVisible()
     }

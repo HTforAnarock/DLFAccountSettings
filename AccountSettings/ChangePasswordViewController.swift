@@ -40,7 +40,6 @@ class ChangePasswordViewController: UIViewController {
     @IBAction func cancelButtonAction(_ sender: Any) {
         let story = UIStoryboard(name: "Main", bundle: nil)
         let controller = story.instantiateViewController(identifier: "AccountSettingsViewController") as! AccountSettingsViewController
-        //self.present(controller, animated: true, completion: nil)
         UIApplication.shared.windows.first?.rootViewController = controller
         UIApplication.shared.windows.first?.makeKeyAndVisible()
     }

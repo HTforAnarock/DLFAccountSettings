@@ -13,6 +13,15 @@ class ConfirmTickMarkViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.autoNavigate()
+    }
+    func autoNavigate() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
+            let story = UIStoryboard(name: "Main", bundle: nil)
+            let controller = story.instantiateViewController(identifier: "AccountSettingsViewController") as! AccountSettingsViewController
+            UIApplication.shared.windows.first?.rootViewController = controller
+            UIApplication.shared.windows.first?.makeKeyAndVisible()
+        })
     }
     
 
