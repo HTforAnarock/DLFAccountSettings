@@ -31,13 +31,11 @@ class ChangePasswordViewController: UIViewController {
         bottomButtonsView.layer.shadowOpacity = 0.2
     }
     
+    @IBAction func saveButtonAction(_ sender: Any) {
+        print(currentPasswordTextfield.text ?? "empty")
+        print(newPasswordTextfield.text ?? "empty")
+        print(confirmPasswordTextfield.text ?? "empty")
+    }
     
 }
 
-//extension ChangePasswordViewController: UITextFieldDelegate {
-//    func textFieldDidEndEditing(_ textField: UITextField) {
-//        let userInputCurrentPassword = currentPasswordTextfield.text
-//        let userInputNewPassword = newPasswordTextfield.text
-//        let userInputConfirmPassword = confirmPasswordTextfield.text
-//    }
-//}
