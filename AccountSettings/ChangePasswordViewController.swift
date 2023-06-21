@@ -10,6 +10,7 @@ import UIKit
 class ChangePasswordViewController: UIViewController {
 
     @IBOutlet weak var seperatorView: UIView!
+    @IBOutlet weak var bottomButtonsView: UIView!
     
     @IBOutlet weak var currentPasswordTextfield: UITextField!
     @IBOutlet weak var newPasswordTextfield: UITextField!
@@ -20,19 +21,23 @@ class ChangePasswordViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.commonSettings()
 
         // Do any additional setup after loading the view.
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func commonSettings() {
+        bottomButtonsView.layer.shadowRadius = 4
+        bottomButtonsView.layer.shadowColor = UIColor.gray.cgColor
+        bottomButtonsView.layer.shadowOpacity = 0.2
     }
-    */
-
+    
+    
 }
+
+//extension ChangePasswordViewController: UITextFieldDelegate {
+//    func textFieldDidEndEditing(_ textField: UITextField) {
+//        let userInputCurrentPassword = currentPasswordTextfield.text
+//        let userInputNewPassword = newPasswordTextfield.text
+//        let userInputConfirmPassword = confirmPasswordTextfield.text
+//    }
+//}

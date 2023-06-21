@@ -10,10 +10,17 @@ import UIKit
 class DeleteAccountViewController: UIViewController {
 
     @IBOutlet weak var confirmButton: UIButton!
+    @IBOutlet weak var bottomButtonsView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.commonSettings()
+    }
+    private func commonSettings() {
+        bottomButtonsView.layer.shadowOpacity = 0.2
+        bottomButtonsView.layer.shadowRadius = 4
+        bottomButtonsView.layer.shadowColor = UIColor.gray.cgColor
     }
     
     @IBAction func confirmButtonAction(_ sender: Any) {

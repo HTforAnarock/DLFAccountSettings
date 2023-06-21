@@ -109,6 +109,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bottomButtonsView" destination="hkf-G8-2Iv" id="Hrz-cx-SsZ"/>
                         <outlet property="confirmButton" destination="dsX-eo-gAj" id="DF1-M3-8y4"/>
                     </connections>
                 </viewController>
